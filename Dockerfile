@@ -5,9 +5,10 @@ RUN add-apt-repository ppa:deadsnakes/ppa -y && \
     apt-get install software-properties-common -y && \
     apt install python3 -y
 
-RUN conda update --all -y && \
-    conda update -n base conda -y && \
-    conda install -c anaconda python=3.7 -y
+RUN conda update -n base conda -y
+RUN conda update --all -y
+RUN conda install -c anaconda python=3.7 -y
+
 
 RUN conda install -c johnsnowlabs spark-nlp -y
 
