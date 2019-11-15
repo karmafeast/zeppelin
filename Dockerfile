@@ -8,7 +8,12 @@ RUN add-apt-repository ppa:deadsnakes/ppa -y && \
 RUN conda update -n base conda -y
 RUN conda update --all -y
 RUN conda install -c anaconda python=3.7 -y
-
+RUN pip install --upgrade numpy && \
+    pip install --upgrade pandas && \
+	pip install --upgrade beautifulsoup4 && \
+	pip install --upgrade networkx && \
+	pip install --upgrade awscli && \
+	pip install --upgrade spark-nlp
 
 RUN conda install -c johnsnowlabs spark-nlp -y
 
