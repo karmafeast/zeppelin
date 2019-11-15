@@ -13,7 +13,8 @@ RUN pip install --upgrade numpy && \
 	pip install --upgrade beautifulsoup4 && \
 	pip install --upgrade networkx && \
 	pip install --upgrade awscli && \
-	pip install --upgrade spark-nlp
+	pip install --upgrade spark-nlp && \
+	pip install --upgrade ipython3
 
 RUN conda install -c johnsnowlabs spark-nlp -y
 
