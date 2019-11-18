@@ -1,5 +1,11 @@
 FROM apache/zeppelin:0.8.1
 
+RUN echo "user      soft      nofile      500000" >> /etc/security/limits.conf && \
+    echo "user      hard      nofile      500000" >> /etc/security/limits.conf && \
+    echo "root      soft      nofile      500000" >> /etc/security/limits.conf && \
+    echo "root      hard      nofile      500000" >> /etc/security/limits.conf && \
+    echo "session required                        pam_limits.so" >> /etc/pam.d/common-session
+
 RUN add-apt-repository ppa:deadsnakes/ppa -y && \
     apt-get update && \
     apt-get install software-properties-common -y && \
