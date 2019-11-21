@@ -29,5 +29,6 @@ RUN wget http://apache.mirror.triple-it.nl/spark/spark-2.4.4/spark-2.4.4-bin-had
 &&  mv spark-2.4.4-bin-hadoop2.7 /opt/spark
 
 ENV SPARK_HOME=/opt/spark
+ENV SPARK_SUBMIT_OPTIONS="--packages com.johnsnowlabs.nlp:spark-nlp_2.11:2.3.2"
 
 EXPOSE 8080
