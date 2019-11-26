@@ -1,0 +1,14 @@
+beautifulsoup4>=4.8.1
+gensim>=3.8.1
+Keras>=2.3.1
+lxml>=4.2.5
+networkx>=2.4
+nltk>=3.4.5
+numpy>=1.15.1
+pandas>=0.23.4
+pydot>=1.2.4
+scikit-learn>=0.21.3
+scipy>=0.14
+spark-nlp>=2.3.2
+tensorflow>=2.0.0b1
+tensorhub>=1.0.0a4
