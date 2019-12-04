@@ -24,6 +24,9 @@ RUN wget http://apache.mirror.triple-it.nl/spark/spark-2.4.4/spark-2.4.4-bin-had
 &&  tar -xzf spark-2.4.4-bin-hadoop2.7.tgz \
 &&  mv spark-2.4.4-bin-hadoop2.7 /opt/spark
 
+COPY spark-defaults.conf /opt/spark/conf/
+COPY interpreter.json /zeppelin/conf/
+
 ENV SPARK_HOME=/opt/spark
 ENV SPARK_SUBMIT_OPTIONS="--packages com.johnsnowlabs.nlp:spark-nlp_2.11:2.3.2"
 
