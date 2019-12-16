@@ -12,3 +12,4 @@ scipy>=0.14
 spark-nlp>=2.3.2
 tensorflow>=2.0.0b1
 tensorhub>=1.0.0a4
+treelib>=1.5.5
