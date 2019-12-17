@@ -1,3 +1,4 @@
+singledispatch
 beautifulsoup4>=4.8.1
 gensim>=3.8.1
 Keras>=2.3.1
